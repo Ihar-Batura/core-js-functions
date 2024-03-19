@@ -51,8 +51,13 @@ function getFunctionBody(func) {
  *  ]) => [0, 1, 2]
  *
  */
-function getArgumentsCount(/* funcs */) {
-  throw new Error('Not implemented');
+function getArgumentsCount(funcs) {
+  const argsLength = funcs.length;
+  const res = [];
+  for (let i = 0; i < argsLength; i += 1) {
+    res.push(i);
+  }
+  return res;
 }
 
 /**
