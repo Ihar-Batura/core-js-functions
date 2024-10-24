@@ -33,8 +33,7 @@ function getCurrentFunctionName() {
  *
  */
 function getFunctionBody(func) {
-  if (!func) return '';
-  return `${func}`;
+  return func ? `${func}` : '';
 }
 
 /**
